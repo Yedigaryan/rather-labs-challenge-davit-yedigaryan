@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import MainFrame from "./components/Animated";
+import './App.scss';
+import MainFrame from "./components/MainFrame";
 
 function App() {
     return (
