@@ -41,7 +41,11 @@ export default function MainFrame() {
                                         width: ['0px', '5px', '10px'],
                                         height: ['0px', '5px', '10px']
                                     }}
-                                    transition={{duration: frameAppearDuration, times: [0.1, 0.3, 0.5], ease: "backOut"}}
+                                    transition={{
+                                        duration: frameAppearDuration,
+                                        times: [0.1, 0.3, 0.5],
+                                        ease: "backOut"
+                                    }}
                                 />
 
                                 <motion.div
@@ -51,7 +55,11 @@ export default function MainFrame() {
                                         width: ['0px', '5px', '10px'],
                                         height: ['0px', '5px', '10px'],
                                     }}
-                                    transition={{duration: frameAppearDuration, times: [0.1, 0.3, 0.5], ease: "easeInOut"}}
+                                    transition={{
+                                        duration: frameAppearDuration,
+                                        times: [0.1, 0.3, 0.5],
+                                        ease: "easeInOut"
+                                    }}
                                 />
                             </div>
 
@@ -59,7 +67,12 @@ export default function MainFrame() {
                                 className={styles.bottomFrames}
                                 initial={{top: '5px', left: 0}}
                                 animate={{top: ['1vh', '1vh', '70vh']}}
-                                transition={{duration: 1, times: [0.1, 0.5, 1], ease: "easeInOut", delay: frameAppearDuration}}
+                                transition={{
+                                    duration: 1,
+                                    times: [0.1, 0.5, 1],
+                                    ease: "easeInOut",
+                                    delay: frameAppearDuration
+                                }}
                             >
                                 <motion.div
                                     className={styles.frame}
@@ -68,7 +81,11 @@ export default function MainFrame() {
                                         height: ['0px', '5px', '10px'],
                                         width: ['0px', '5px', '10px'],
                                     }}
-                                    transition={{duration: frameAppearDuration, times: [0.1, 0.3, 0.5], ease: "easeInOut"}}
+                                    transition={{
+                                        duration: frameAppearDuration,
+                                        times: [0.1, 0.3, 0.5],
+                                        ease: "easeInOut"
+                                    }}
                                 />
                                 <motion.div
                                     className={styles.frame}
@@ -82,18 +99,28 @@ export default function MainFrame() {
                                         height: ['0px', '5px', '10px'],
                                         width: ['0px', '5px', '10px'],
                                     }}
-                                    transition={{duration: frameAppearDuration, times: [0.1, 0.3, 0.5], ease: "easeInOut"}}
+                                    transition={{
+                                        duration: frameAppearDuration,
+                                        times: [0.1, 0.3, 0.5],
+                                        ease: "easeInOut"
+                                    }}
                                 />
 
                             </motion.div>
                         </div>
                     </motion.div>
                     <div className={styles.numbers}>
-                        <Numbers frameAppearDuration={frameAppearDuration}/>
-                    </div><
-                    div className={styles.blueFlame}>
-                    {/*<BlueFlame/>*/}
+                        <Numbers frameAppearDuration={frameAppearDuration - 1}/>
                     </div>
+                    <motion.div
+                        className={styles.blueFlame}
+                        initial={{ opacity: 0}}
+                        animate={{ opacity: 1}}
+                        transition={{duration: 8, ease: "easeInOut", delay: frameAppearDuration - 1}}
+                    >
+                        <BlueFlame/>
+                    </motion.div>
+
                 </div>
             </div>
         </>
