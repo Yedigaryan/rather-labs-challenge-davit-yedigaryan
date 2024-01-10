@@ -11,6 +11,7 @@
     height: 100px;
     position: absolute;
     left: 50%;
+    top: -100px;
     & .outerSlash:nth-child(1) {
       top: 10px;
       left: calc(50% - 0px);
@@ -29,7 +30,7 @@
     flex-direction: column-reverse;
     position: absolute;
     left: calc(50% + 12px);
-    top: -73px;
+    top: -173px;
     & .outerSlash:nth-child(1) {
       top: 22px;
       left: calc(50% - 0px);

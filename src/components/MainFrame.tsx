@@ -1,4 +1,4 @@
-import {AnimationControls, color, motion, useAnimation} from "framer-motion";
+import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
 import Numbers from "./Numbers";
 import {BlueFlame} from "./BlueFlame";
@@ -6,12 +6,11 @@ import styles from "./MainFrame.module.scss"
 import {Chain} from "./Chain";
 
 export default function MainFrame() {
-    const controls: AnimationControls = useAnimation();
-    const [number, setNumber] = useState(0);
+    const [isSecondStage, setIsSecondStage] = useState(false);
 
 
     useEffect(() => {
-        const timer = setTimeout(() => setNumber(1), 500); // Change number after 500ms
+        const timer = setTimeout(() => setIsSecondStage(true), 10000); // Change number after 500ms
         return () => clearTimeout(timer);
     }, []);
     const frameAppearDuration: number = 2;
@@ -67,7 +66,7 @@ export default function MainFrame() {
                             <motion.div
                                 className={styles.bottomFrames}
                                 initial={{top: '5px', left: 0}}
-                                animate={{top: ['1vh', '1vh', '70vh']}}
+                                animate={{top: ['1vh', '1vh', '60vh']}}
                                 transition={{
                                     duration: 1,
                                     times: [0.1, 0.5, 1],
@@ -119,9 +118,9 @@ export default function MainFrame() {
                         animate={{ opacity: 1}}
                         transition={{duration: 8, ease: "easeInOut", delay: frameAppearDuration - 1}}
                     >
-                        <BlueFlame/>
+                        <BlueFlame isSecondStage={isSecondStage}/>
                     </motion.div>
-                    <Chain/>
+                    <Chain frameAppearDuration={frameAppearDuration}/>
                 </div>
             </div>
         </>
