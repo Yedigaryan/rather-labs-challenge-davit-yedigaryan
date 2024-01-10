@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import Numbers from "./Numbers";
 import {BlueFlame} from "./BlueFlame";
 import styles from "./MainFrame.module.scss"
+import {Chain} from "./Chain";
 
 export default function MainFrame() {
     const controls: AnimationControls = useAnimation();
@@ -120,7 +121,7 @@ export default function MainFrame() {
                     >
                         <BlueFlame/>
                     </motion.div>
-
+                    <Chain/>
                 </div>
             </div>
         </>
