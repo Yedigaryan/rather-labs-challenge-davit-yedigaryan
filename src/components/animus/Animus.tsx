@@ -28,6 +28,8 @@ export function Animus() {
         <div className={styles.animusWrapper}>
             <AnimusLoading/>
             <motion.span
+                style={{width: '100%'}}
+                className={styles.text}
                 variants={revealAnimation}
                 initial="hidden"
                 animate="show"
@@ -36,6 +38,7 @@ export function Animus() {
             </motion.span>
             <div className={styles.animusCentralContent}>
                 <motion.span
+                    className={styles.text}
                     variants={revealAnimation}
                     initial="hidden"
                     animate="show"
@@ -49,6 +52,7 @@ export function Animus() {
                         transition={{duration: 0.5, ease: "easeInOut"}}
                         className={styles.greenLight}></motion.span>
                     <motion.span
+                        className={styles.text}
                         variants={revealAnimation}
                         initial="hidden"
                         animate="show"

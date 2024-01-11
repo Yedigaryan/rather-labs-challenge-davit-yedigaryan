@@ -9,7 +9,7 @@ export function Chain({frameAppearDuration}: { frameAppearDuration: number }) {
         hidden: {backgroundColor: "gray", opacity: 0, height: 0},
         show: {
             backgroundColor: bgColor,
-            height: '16px',
+            height: '12px',
             opacity: 1,
             transition: {duration: frameAppearDuration + 0.5, ease: "easeInOut", delay: frameAppearDuration - 0.5}
         },
@@ -17,7 +17,7 @@ export function Chain({frameAppearDuration}: { frameAppearDuration: number }) {
 
 
     useEffect(() => {
-        setTimeout(() => setBgColor('green'), (frameAppearDuration + 1.5) * 1000)
+        setTimeout(() => setBgColor('#00361c'), (frameAppearDuration + 1.5) * 1000)
     }, []);
     return (
         <div className={styles.chainWrapper}>
