@@ -1,0 +1,54 @@
+.chainWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  & > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 48%;
+    top: -100px;
+    & .outerSlash:nth-child(1) {
+      top: 10px;
+      left: 50%;
+    }
+
+    & .outerSlash:nth-child(2) {
+      top: 5px;
+      left: calc(50% + 10px);
+    }
+  }
+
+  & > div:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: calc(48% + 12px);
+    top: -173px;
+    & .outerSlash:nth-child(1) {
+      top: 22px;
+      left: 50%;
+    }
+
+    & .outerSlash:nth-child(2) {
+      top: 15px;
+      left: calc(50% + 12px);
+    }
+  }
+
+}
+
+.outerSlash {
+  display: flex;
+  border-radius: 4px;
+  transform: skew(330deg, 10deg);
+  width: 4px;
+}
+
+
