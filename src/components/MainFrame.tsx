@@ -5,6 +5,7 @@ import {BlueFlame} from "./BlueFlame";
 import styles from "./MainFrame.module.scss"
 import {Chain} from "./Chain";
 import {Frames} from "./Frames";
+import {Animus} from "./Animus";
 
 export default function MainFrame() {
     const [isSecondStage, setIsSecondStage] = useState(false);
@@ -30,8 +31,12 @@ export default function MainFrame() {
                     //     ease: "backOut", when: "afterChildren", delay: 7
                     // }}
                     className={styles.centerContent}>
+                    {isSecondStage ?
+                        <Animus/>
+                        :
+                        <Numbers frameAppearDuration={frameAppearDuration - 1}/>
+                    }
                     <Frames frameAppearDuration={frameAppearDuration}/>
-                    <Numbers frameAppearDuration={frameAppearDuration - 1}/>
                     <BlueFlame frameAppearDuration={frameAppearDuration} isSecondStage={isSecondStage}/>
                     <Chain frameAppearDuration={frameAppearDuration}/>
                 </motion.div>
