@@ -1,6 +1,6 @@
 # Link to the project result
 
-[[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)]](https://i.imgur.com/FwUCnbF.png)([https://youtu.be/vt5fpE0bzSY](https://youtube.com/shorts/GnaGhBkaS74?feature=share))
+([https://youtu.be/vt5fpE0bzSY](https://youtube.com/shorts/GnaGhBkaS74?feature=share))
 
 # Getting Started with Create React App
 
