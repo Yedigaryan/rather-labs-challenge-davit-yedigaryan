@@ -1,6 +1,7 @@
 # Link to the project result
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtube.com/shorts/GnaGhBkaS74?feature=share)
+[![Watch the video]([https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg](https://i.ytimg.com/vi/GnaGhBkaS74/oar2.jpg?sqp=-oaymwEdCNgDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLAIZt3yaFrUEuh9v5JeOrfaqBCYrQ))](https://youtube.com/shorts/GnaGhBkaS74?feature=share)
+
 
 # Getting Started with Create React App
 
