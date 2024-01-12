@@ -12,7 +12,7 @@ export default function MainFrame() {
 
 
     useEffect(() => {
-        const timer = setTimeout(() => setIsSecondStage(true), 7000); // Change number after 500ms
+        const timer = setTimeout(() => setIsSecondStage(true), 8000); // Change number after 500ms
         return () => clearTimeout(timer);
     }, []);
     const frameAppearDuration: number = 2;
@@ -28,7 +28,7 @@ export default function MainFrame() {
                     }}
                     transition={{
                         duration: 6,
-                        ease: "backOut", when: "afterChildren", delay: 6.2
+                        ease: "backOut", when: "afterChildren", delay: 7.2
                     }}
                     className={styles.centerContent}>
                     {isSecondStage ?

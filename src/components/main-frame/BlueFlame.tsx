@@ -14,7 +14,7 @@ export function BlueFlame({isSecondStage, frameAppearDuration}: {
                 className={styles.blueFlame}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
-                transition={{duration: 8, ease: "easeInOut", delay: frameAppearDuration - 1}}
+                transition={{duration: 4, ease: "easeInOut", delay: frameAppearDuration - 1.5}}
             >
                 <video autoPlay muted loop width='192px' height='230px'>
                     {
@@ -33,9 +33,9 @@ export function BlueFlame({isSecondStage, frameAppearDuration}: {
                 className={styles.blueFlame}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
-                transition={{duration: 4, ease: "easeInOut", delay: frameAppearDuration - 1}}
+                transition={{duration: 6, ease: "easeInOut", delay: frameAppearDuration - 1.5}}
             >
-                <video key={isSecondStage ? 'animus_blue' : 'blue_fire'} autoPlay muted loop width='192px'
+                <video key='blue_fire' autoPlay muted loop width='192px'
                        height='230px'>
                     {
                         <>
