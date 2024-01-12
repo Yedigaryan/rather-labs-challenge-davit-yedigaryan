@@ -1,3 +1,7 @@
+# Link to the project result
+
+[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)]([https://youtu.be/vt5fpE0bzSY](https://youtube.com/shorts/GnaGhBkaS74?feature=share))
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
