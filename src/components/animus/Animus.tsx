@@ -15,7 +15,7 @@ export function Animus() {
     useEffect(() => {
         let timer: number = 0;
         const timeout: NodeJS.Timer = setInterval(() => setIsLightOn((prevState: boolean) => {
-            if (timer <= 2) {
+            if (timer <= 5) {
                 timer++;
                 return prevState;
             }

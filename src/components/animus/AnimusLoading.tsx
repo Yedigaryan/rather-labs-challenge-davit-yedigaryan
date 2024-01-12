@@ -3,6 +3,8 @@ import {AnimusLoadingElement} from "./AnimusLoadingElement";
 import {motion} from "framer-motion";
 
 export function AnimusLoading() {
+    const pointsDuration: number = 6;
+    const lineDuration: number = 4;
     const top1: string[] = generateRandomArray(20, 0, 21);
     const top2: string[] = generateRandomArray(20, 22, 38);
     const top3: string[] = generateRandomArray(20, 0, 10);
@@ -46,23 +48,28 @@ export function AnimusLoading() {
                     <motion.div
                         initial={{top: '0px'}}
                         animate={{top: pointLeft1}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         initial={{top: '10px'}}
                         animate={{top: pointLeft2}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         initial={{top: '18px'}}
                         animate={{top: pointLeft3}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         initial={{top: '30px'}}
                         animate={{top: pointLeft4}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         className={styles.absolute}
                         initial={{top: '10px'}}
                         animate={{top: top1}}
+                        transition={{duration: lineDuration, ease: "easeInOut"}}
                     >
                         <AnimusLoadingElement marginBottom={'0'}/>
                     </motion.div>
@@ -70,47 +77,57 @@ export function AnimusLoading() {
                         className={styles.absolute}
                         initial={{top: '10px'}}
                         animate={{top: top2}}
+                        transition={{duration: lineDuration, ease: "easeInOut"}}
                     >
                         <AnimusLoadingElement marginBottom={'0'}/>
                     </motion.div>
                     <motion.div
                         initial={{top: '2px'}}
                         animate={{top: pointRight1}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                     <motion.div
                         initial={{top: '12px'}}
                         animate={{top: pointRight2}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                     <motion.div
                         initial={{top: '22px'}}
                         animate={{top: pointRight3}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                     <motion.div
                         initial={{top: '34px'}}
                         animate={{top: pointRight4}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                 </div>
                 <div className={styles.column}>
                     <motion.div
                         initial={{top: '5px'}}
                         animate={{top: pointLeft5}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         initial={{top: '16px'}}
                         animate={{top: pointLeft6}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         initial={{top: '21px'}}
                         animate={{top: pointLeft7}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         initial={{top: '39px'}}
                         animate={{top: pointLeft8}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsLeft}/>
                     <motion.div
                         className={styles.absolute}
                         initial={{top: '10px'}}
                         animate={{top: top3}}
+                        transition={{duration: lineDuration, ease: "easeInOut"}}
                     >
                         <AnimusLoadingElement marginBottom={'0'}/>
                     </motion.div>
@@ -118,24 +135,29 @@ export function AnimusLoading() {
                         className={styles.absolute}
                         initial={{top: '10px'}}
                         animate={{top: top4}}
+                        transition={{duration: lineDuration, ease: "easeInOut"}}
                     >
                         <AnimusLoadingElement marginBottom={'0'}/>
                     </motion.div>
                     <motion.div
                         initial={{top: '9px'}}
                         animate={{top: pointRight5}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                     <motion.div
                         initial={{top: '14px'}}
                         animate={{top: pointRight6}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                     <motion.div
                         initial={{top: '20px'}}
                         animate={{top: pointRight7}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                     <motion.div
                         initial={{top: '25px'}}
                         animate={{top: pointRight8}}
+                        transition={{duration: pointsDuration, ease: "easeInOut"}}
                         className={styles.pointsRight}/>
                 </div>
                 <div style={{marginTop: '-2px'}} className={styles.column}>

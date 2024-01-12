@@ -1,6 +1,6 @@
 import {ICases} from "../interfaces/NumberInterfaces";
 
-export const STEP_DURATION: number = 0.2
+export const STEP_DURATION: number = 0.1
 
 export const casesPart: ICases[] = [
     {time: STEP_DURATION, payload: [{row: 0, col: 0, digit: true}]},
