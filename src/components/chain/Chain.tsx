@@ -17,7 +17,7 @@ export function Chain({frameAppearDuration}: { frameAppearDuration: number }) {
 
 
     useEffect(() => {
-        setTimeout(() => setBgColor('#00361c'), (frameAppearDuration + 1.5) * 1000)
+        setTimeout(() => setBgColor('rgb(52 113 88)'), (frameAppearDuration + 1.5) * 1000)
     }, []);
     return (
         <div className={styles.chainWrapper}>

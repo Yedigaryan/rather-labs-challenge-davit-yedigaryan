@@ -1,3 +1,5 @@
+@import "/public/assets/styles/variables";
+
 .animusWrapper {
   color: white;
   width: 155px;
@@ -26,7 +28,7 @@
 }
 
 .text {
-  color: #a0a0a1;
+  color: $grey;
   font-weight: 700;
   font-size: 23px;
   font-family: 'Roboto', sans-serif
