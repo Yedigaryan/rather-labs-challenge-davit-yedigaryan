@@ -1,0 +1,93 @@
+@import "/public/assets/styles/variables";
+
+.container {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.centerContent {
+  width: 50%;
+  height: 73%;
+  padding: 10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.frames {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    position: relative;
+    width: 30%;
+    height: 67%;
+  }
+}
+
+.topFrames {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  flex-direction: row-reverse;
+
+
+  .frame:nth-child(1) {
+    width: 26px;
+    border-top: $border-width solid $white;
+    border-right: $border-width solid $white;
+  }
+
+  .frame:nth-child(2) {
+    border-top: $border-width solid $white;
+    border-left: $border-width solid $white;
+  }
+}
+
+.bottomFrames {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  .frame:nth-child(1) {
+    border-bottom: $border-width solid $white;
+    border-right: $border-width solid $white;
+  }
+
+  .frame:nth-child(2) {
+    border-bottom: $border-width solid $white;
+    border-left: $border-width solid $white;
+  }
+}
+
+.numbers {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blueFlame {
+  height: 44%;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}

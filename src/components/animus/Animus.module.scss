@@ -1,0 +1,35 @@
+@import "/public/assets/styles/variables";
+
+.animusWrapper {
+  color: white;
+  width: 155px;
+  height: 50px;
+  margin-block: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.animusCentralContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 5px;
+  width: 100%;
+}
+
+.greenLight {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin-top: 2px;
+  margin-right: 2px;
+  border-radius: 1px;
+}
+
+.text {
+  color: $grey;
+  font-weight: 700;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif
+}

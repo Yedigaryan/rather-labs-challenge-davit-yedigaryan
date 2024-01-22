@@ -1,0 +1,40 @@
+@import "/public/assets/styles/variables";
+
+.loadingWrapper {
+  width: 105px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.pointsLeft {
+  background-color: $grey;
+  width: 2px;
+  height: 1px;
+  position: absolute;
+  left: -1px;
+}
+.pointsRight {
+  background-color: $grey;
+  width: 2px;
+  height: 1px;
+  position: absolute;
+  right: -1px;
+}
+
+
+
